@@ -52,10 +52,7 @@ sub run_commit_msg
 	{
 		my $failure_character = $app->get_failure_character();
 		my $indent = '    ';
-		print $app->color( 'red', $failure_character . " Your commit needs to start with one of the following:\n" );
-		print $app->wrap( "- for FogBugz tickets, 'FB1234: '\n", $indent );
-		print $app->wrap( "- for JIRA tickets, 'TL-1234: '\n", $indent );
-		print $app->wrap( "- if no ticket is truly applicable, '--: '\n", $indent );
+		print $app->color( 'red', $failure_character . " Your commit message needs to start with a ticket ID.\n" );
 		return $PLUGIN_RETURN_FAILED;
 	}
 

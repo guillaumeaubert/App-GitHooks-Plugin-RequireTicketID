@@ -26,7 +26,7 @@ my $tests =
 		name           => 'Missing ticket ID.',
 		files          => $files,
 		commit_message => 'Test',
-		expected       => qr/\Qx Your commit needs to start with one of the following\E/,
+		expected       => qr/\Qx Your commit message needs to start with a ticket ID.\E/,
 	},
 	{
 		name           => 'Properly formatted ticket ID.',
