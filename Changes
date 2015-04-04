@@ -1,5 +1,8 @@
 Revision history for App-GitHooks-Plugin-RequireTicketID
 
+v1.0.4  2015-04-03
+        - Documented configuration options.
+
 v1.0.3  2014-06-08
         - Noted git version in tests to help troubleshooting.
         - Required git v1.7.4.1.
