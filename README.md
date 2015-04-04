@@ -3,7 +3,7 @@ App-GitHooks-Plugin-RequireTicketID
 
 [![Build Status](https://travis-ci.org/guillaumeaubert/App-GitHooks-Plugin-RequireTicketID.svg?branch=master)](https://travis-ci.org/guillaumeaubert/App-GitHooks-Plugin-RequireTicketID)
 [![Coverage Status](https://coveralls.io/repos/guillaumeaubert/App-GitHooks-Plugin-RequireTicketID/badge.svg?branch=master)](https://coveralls.io/r/guillaumeaubert/App-GitHooks-Plugin-RequireTicketID?branch=master)
-[![Latest Version](https://img.shields.io/github/tag/guillaumeaubert/App-GitHooks-Plugin-RequireTicketID.svg?style=flat)](https://metacpan.org/release/App-GitHooks-Plugin-RequireTicketID)
+[![CPAN](https://img.shields.io/cpan/v/App-GitHooks-Plugin-RequireTicketID.svg)](https://metacpan.org/release/App-GitHooks-Plugin-RequireTicketID)
 
 App::GitHooks plugin to require a ticket ID in the commit message.
 
