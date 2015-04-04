@@ -30,6 +30,32 @@ Version 1.0.3
 our $VERSION = '1.0.3';
 
 
+=head1 CONFIGURATION OPTIONS
+
+This plugin supports the following options in the main section of your
+C<.githooksrc> file.
+
+	project_prefixes = OPS, DEV
+	extract_ticket_id_from_commit = /^($project_prefixes-\d+|--): /
+
+
+=head2 project_prefixes
+
+A comma-separated list of project prefixes, in case you want to use this in
+C<extract_ticket_id_from_commit> or C<extract_ticket_id_from_branch>.
+
+	project_prefixes = OPS, DEV
+
+
+=head2 extract_ticket_id_from_commit
+
+A regular expression with _one_ capturing group that will be applied to the
+first line of a commit message to extract the ticket ID referenced, if there is
+one.
+
+	extract_ticket_id_from_commit = /^($project_prefixes-\d+|--): /
+
+
 =head1 METHODS
 
 =head2 run_commit_msg()
