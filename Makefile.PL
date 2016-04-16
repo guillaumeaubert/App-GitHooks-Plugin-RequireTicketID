@@ -3,22 +3,22 @@ require 5.010;
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-  'test' => {
-              'TESTS' => 't/*.t'
-            },
+  'NAME' => 'App::GitHooks::Plugin::RequireTicketID',
+  'PREREQ_PM' => {
+                   'Test::More' => '0.94',
+                   'Git::Repository' => 0,
+                   'Test::Exception' => 0,
+                   'App::GitHooks' => 0,
+                   'Test::Requires::Git' => '1.005',
+                   'Capture::Tiny' => 0,
+                   'Test::FailWarnings' => 0
+                 },
+  'EXE_FILES' => [],
   'PL_FILES' => {},
   'INSTALLDIRS' => 'site',
-  'NAME' => 'App::GitHooks::Plugin::RequireTicketID',
-  'EXE_FILES' => [],
   'VERSION_FROM' => 'lib/App/GitHooks/Plugin/RequireTicketID.pm',
-  'PREREQ_PM' => {
-                   'App::GitHooks' => 0,
-                   'Test::Requires::Git' => 1.005,
-                   'Test::Exception' => 0,
-                   'Capture::Tiny' => 0,
-                   'Test::FailWarnings' => 0,
-                   'Test::More' => '0.94',
-                   'Git::Repository' => 0
-                 }
+  'test' => {
+              'TESTS' => 't/*.t'
+            }
 )
 ;
